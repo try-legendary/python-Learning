@@ -1,987 +1,349 @@
-Python Variables & Data Types - Coding Questions->>
-
-1. Variable Basics:
-# Q1: Swap two variables without using a third variable
-a = 5
-b = 10
-# Your code here
-# Expected: a = 10, b = 5
-
-# Q2: Swap three variables in circular manner (a→b, b→c, c→a)
-a, b, c = 1, 2, 3
-# Your code here
-# Expected: a=3, b=1, c=2
-
-# Q3: Assign same value to multiple variables in one line
-# Create x, y, z all equal to 100
-
-# Q4: Assign different values to multiple variables in one line
-# Create a=1, b=2, c=3 in one line
-
-# Q5: Delete a variable and handle the error when accessing it
-x = 50
-# Delete x and try to print it with error handling
-
-# Q6: Unpack a list into variables
-data = [1, 2, 3, 4, 5]
-# Unpack first, second, and rest of elements
-# first=1, second=2, rest=[3,4,5]
-
-# Q7: Unpack with ignoring some values
-data = [1, 2, 3, 4, 5]
-# Get only first and last element
-
-# Q8: Create variables dynamically using a dictionary
-# Given: var_names = ['a', 'b', 'c'] and values = [1, 2, 3]
-# Create a dictionary that acts like variables
-
-# Q9: Check if a variable exists in current scope
-# Write code to check if 'my_var' exists
-
-# Q10: Get all local variables and their values
-# Write a function that returns all local variables
-
-
-2.Integer Operations:
-
-# Q11: Check if a number is even or odd
-def is_even(n):
-    # Your code here
-    pass
-
-# Q12: Find the last digit of a number
-def last_digit(n):
-    # Your code here
-    pass
-
-# Q13: Find the number of digits in an integer
-def count_digits(n):
-    # Your code here
-    pass
-
-# Q14: Reverse an integer
-def reverse_integer(n):
-    # Input: 12345 → Output: 54321
-    # Input: -123 → Output: -321
-    pass
-
-# Q15: Check if a number is palindrome
-def is_palindrome_number(n):
-    # Input: 121 → True
-    # Input: 123 → False
-    pass
-
-    # Q16: Convert decimal to binary (without bin())
-def decimal_to_binary(n):
-    # Input: 10 → Output: "1010"
-    pass
-
-# Q17: Convert binary string to decimal (without int())
-def binary_to_decimal(binary_str):
-    # Input: "1010" → Output: 10
-    pass
-
-# Q18: Find GCD of two numbers
-def gcd(a, b):
-    pass
-
-# Q19: Find LCM of two numbers
-def lcm(a, b):
-    pass
-
-# Q20: Check if number is prime
-def is_prime(n):
-    pass
-
-# Q21: Find sum of digits
-def sum_of_digits(n):
-    # Input: 1234 → Output: 10
-    pass
-
-# Q22: Find factorial
-def factorial(n):
-    pass
-
-# Q23: Check if number is Armstrong number
-def is_armstrong(n):
-    # 153 = 1³ + 5³ + 3³ = 153 → True
-    pass
-
-# Q24: Convert integer to Roman numeral
-def int_to_roman(num):
-    # Input: 58 → Output: "LVIII"
-    pass
-
-# Q25: Find nth Fibonacci number
-def fibonacci(n):
-    pass
-
-    # Q26: Find all prime factors
-def prime_factors(n):
-    # Input: 12 → Output: [2, 2, 3]
-    pass
-
-# Q27: Check if two numbers are coprime
-def are_coprime(a, b):
-    pass
-
-# Q28: Find number of trailing zeros in factorial
-def trailing_zeros(n):
-    # Input: 25 → Output: 6 (25! has 6 trailing zeros)
-    pass
-
-# Q29: Convert any base to any base
-def base_convert(num_str, from_base, to_base):
-    # Input: ("1010", 2, 10) → "10"
-    # Input: ("FF", 16, 2) → "11111111"
-    pass
-
-# Q30: Find the integer square root (without math.sqrt)
-def integer_sqrt(n):
-    # Input: 8 → Output: 2
-    # Input: 16 → Output: 4
-    pass
-
-3. Float Operations:
-
-# Q31: Round a float to n decimal places (without round())
-def round_float(num, decimals):
-    pass
-
-# Q32: Check if a float is an integer value
-def is_integer_value(f):
-    # Input: 5.0 → True
-    # Input: 5.5 → False
-    pass
-
-# Q33: Get integer and decimal parts separately
-def split_float(f):
-    # Input: 3.14 → (3, 0.14)
-    pass
-
-# Q34: Compare two floats with tolerance
-def floats_equal(a, b, tolerance=1e-9):
-    # Handle floating point precision issues
-    pass
-
-# Q35: Convert float to fraction string
-def float_to_fraction(f):
-    # Input: 0.5 → "1/2"
-    # Input: 0.25 → "1/4"
-    pass
-
-    # Q36: Calculate compound interest
-def compound_interest(principal, rate, time, n):
-    # n = number of times compounded per year
-    pass
-
-# Q37: Format float as currency
-def format_currency(amount, symbol="$"):
-    # Input: 1234.5 → "$1,234.50"
-    pass
-
-# Q38: Check if float is within range (inclusive)
-def in_range(value, min_val, max_val):
-    pass
-
-# Q39: Find mean, median, mode of float list
-def statistics(numbers):
-    # Return dictionary with mean, median, mode
-    pass
-
-# Q40: Calculate standard deviation
-def std_deviation(numbers):
-    pass
-
-4. String Operations:
-
-# Q41: Count vowels and consonants
-def count_vowels_consonants(s):
-    # Return tuple (vowels, consonants)
-    pass
-
-# Q42: Reverse a string (without slicing or reversed())
-def reverse_string(s):
-    pass
-
-# Q43: Check if string is palindrome
-def is_palindrome(s):
-    pass
-
-# Q44: Count word frequency
-def word_frequency(s):
-    # Return dictionary with word counts
-    pass
-
-# Q45: Remove all whitespace
-def remove_whitespace(s):
-    pass
-
-# Q46: Capitalize first letter of each word (without title())
-def title_case(s):
-    pass
-
-# Q47: Check if string contains only digits
-def is_all_digits(s):
-    pass
-
-# Q48: Find first non-repeating character
-def first_unique_char(s):
-    # Input: "aabbcdd" → "c"
-    pass
-
-# Q49: Remove duplicate characters
-def remove_duplicates(s):
-    # Input: "programming" → "progamin"
-    pass
-
-# Q50: Count character frequency
-def char_frequency(s):
-    # Return dictionary
-    pass
-
-# Q51: Check if two strings are anagrams
-def are_anagrams(s1, s2):
-    pass
-
-# Q52: Find all substrings of a string
-def all_substrings(s):
-    pass
-
-# Q53: Find longest word in a string
-def longest_word(s):
-    pass
-
-# Q54: Compress string using run-length encoding
-def compress_string(s):
-    # Input: "aaabbbcc" → "a3b3c2"
-    pass
-
-# Q55: Decompress run-length encoded string
-def decompress_string(s):
-    # Input: "a3b3c2" → "aaabbbcc"
-    pass
-
-# Q56: Check if string is rotation of another
-def is_rotation(s1, s2):
-    # "waterbottle" is rotation of "erbottlewat"
-    pass
-
-# Q57: Find all permutations of a string
-def permutations(s):
-    pass
-
-# Q58: Convert string to title case with exceptions
-def smart_title(s, exceptions=['a', 'an', 'the', 'of']):
-    # "the lord of the rings" → "The Lord of the Rings"
-    pass
-
-# Q59: Validate email format
-def is_valid_email(email):
-    pass
-
-# Q60: Extract numbers from string
-def extract_numbers(s):
-    # Input: "a1b2c3" → [1, 2, 3]
-    pass
-
-# Q61: Find longest palindromic substring
-def longest_palindrome_substring(s):
-    pass
-
-# Q62: Find shortest string containing all characters
-def min_window_substring(s, chars):
-    pass
-
-# Q63: Implement string matching (KMP algorithm)
-def string_match(text, pattern):
-    # Return all starting indices
-    pass
-
-# Q64: Convert string expression to integer
-def string_to_expression(s):
-    # Input: "3+5*2" → 13
-    pass
-
-# Q65: Generate all valid parentheses combinations
-def generate_parentheses(n):
-    # Input: 2 → ["(())", "()()"]
-    pass
-
-5. List Operations :
-# Q66: Find maximum element (without max())
-def find_max(lst):
-    pass
-
-# Q67: Find minimum element (without min())
-def find_min(lst):
-    pass
-
-# Q68: Find sum of all elements (without sum())
-def find_sum(lst):
-    pass
-
-# Q69: Find average of elements
-def find_average(lst):
-    pass
-
-# Q70: Reverse a list (without reverse() or slicing)
-def reverse_list(lst):
-    pass
-
-# Q71: Count occurrences of element
-def count_element(lst, element):
-    pass
-
-# Q72: Remove all occurrences of element
-def remove_all(lst, element):
-    pass
-
-# Q73: Find second largest element
-def second_largest(lst):
-    pass
-
-# Q74: Check if list is sorted
-def is_sorted(lst):
-    pass
-
-# Q75: Merge two sorted lists
-def merge_sorted(lst1, lst2):
-    pass
-
-# Q76: Remove duplicates maintaining order
-def remove_duplicates_ordered(lst):
-    pass
-
-# Q77: Find all pairs with given sum
-def pairs_with_sum(lst, target):
-    # Input: [1,2,3,4,5], 6 → [(1,5), (2,4)]
-    pass
-
-# Q78: Rotate list by k positions
-def rotate_list(lst, k):
-    # Input: [1,2,3,4,5], 2 → [4,5,1,2,3]
-    pass
-
-# Q79: Flatten nested list (one level)
-def flatten_one_level(lst):
-    # Input: [[1,2], [3,4]] → [1,2,3,4]
-    pass
-
-# Q80: Flatten deeply nested list
-def flatten_deep(lst):
-    # Input: [1, [2, [3, [4]]]] → [1,2,3,4]
-    pass
-
-# Q81: Find intersection of two lists
-def intersection(lst1, lst2):
-    pass
-
-# Q82: Find union of two lists
-def union(lst1, lst2):
-    pass
-
-# Q83: Find difference of two lists
-def difference(lst1, lst2):
-    pass
-
-# Q84: Chunk list into smaller lists
-def chunk_list(lst, size):
-    # Input: [1,2,3,4,5], 2 → [[1,2], [3,4], [5]]
-    pass
-
-# Q85: Interleave two lists
-def interleave(lst1, lst2):
-    # Input: [1,2,3], ['a','b','c'] → [1,'a',2,'b',3,'c']
-    pass
-
-# Q86: Find missing number in sequence
-def find_missing(lst):
-    # Input: [1,2,4,5] → 3
-    pass
-
-# Q87: Find duplicate elements
-def find_duplicates(lst):
-    pass
-
-# Q88: Partition list by condition
-def partition(lst, condition):
-    # Input: [1,2,3,4,5], lambda x: x%2==0
-    # Output: ([2,4], [1,3,5])
-    pass
-
-# Q89: Group consecutive elements
-def group_consecutive(lst):
-    # Input: [1,1,2,2,2,3,1,1] → [[1,1], [2,2,2], [3], [1,1]]
-    pass
-
-# Q90: Find longest consecutive sequence
-def longest_consecutive(lst):
-    # Input: [100,4,200,1,3,2] → 4 (sequence 1,2,3,4)
-    pass
-# Q91: Implement quicksort
-def quicksort(lst):
-    pass
-
-# Q92: Implement mergesort
-def mergesort(lst):
-    pass
-
-# Q93: Find kth largest element
-def kth_largest(lst, k):
-    pass
-
-# Q94: Find majority element (appears > n/2 times)
-def majority_element(lst):
-    pass
-
-# Q95: Find subarray with maximum sum (Kadane's algorithm)
-def max_subarray_sum(lst):
-    pass
-
-# Q96: Find all triplets with zero sum
-def three_sum_zero(lst):
-    pass
-
-# Q97: Product of array except self
-def product_except_self(lst):
-    # Without using division
-    pass
-
-# Q98: Find smallest positive missing number
-def smallest_missing_positive(lst):
-    pass
-
-# Q99: Implement binary search
-def binary_search(lst, target):
-    pass
-
-# Q100: Find peak element
-def find_peak(lst):
-    pass
-
-# Q101: Create tuple from user input
-def create_tuple_from_input(n):
-    # Take n integers as input and return as tuple
-    pass
-
-# Q102: Find sum of tuple elements
-def tuple_sum(t):
-    pass
-
-# Q103: Count occurrences in tuple
-def tuple_count(t, element):
-    pass
-
-# Q104: Find index of element in tuple
-def tuple_index(t, element):
-    pass
-
-# Q105: Check if element exists in tuple
-def tuple_contains(t, element):
-    pass
-# Q106: Convert list of tuples to dictionary
-def tuples_to_dict(lst):
-    # Input: [('a',1), ('b',2)] → {'a':1, 'b':2}
-    pass
-
-# Q107: Sort list of tuples by second element
-def sort_by_second(lst):
-    pass
-
-# Q108: Find tuple with maximum sum
-def max_sum_tuple(lst):
-    # Input: [(1,2), (3,4), (5,6)] → (5,6)
-    pass
-
-# Q109: Unzip list of tuples
-def unzip(lst):
-    # Input: [(1,'a'), (2,'b')] → ([1,2], ['a','b'])
-    pass
-
-# Q110: Group tuples by first element
-def group_by_first(lst):
-    # Input: [(1,'a'), (1,'b'), (2,'c')]
-    # Output: {1: ['a','b'], 2: ['c']}
-    pass
-
-# Q111: Merge tuples element-wise
-def merge_tuples(t1, t2):
-    # Input: (1,2,3), (4,5,6) → (5,7,9)
-    pass
-
-# Q112: Find common elements in tuples
-def common_elements(*tuples):
-    pass
-
-# Q113: Create named tuple equivalent using class
-class Point:
-    # Create a class that behaves like namedtuple
-    pass
-
-# Q114: Flatten nested tuples
-def flatten_tuples(t):
-    pass
-
-# Q115: Convert nested lists to nested tuples
-def lists_to_tuples(obj):
-    pass
-
-
-7. Dictionary Operations:
-
-# Q116: Merge two dictionaries
-def merge_dicts(d1, d2):
-    pass
-
-# Q117: Find key with maximum value
-def key_with_max_value(d):
-    pass
-
-# Q118: Find key with minimum value
-def key_with_min_value(d):
-    pass
-
-# Q119: Invert dictionary (swap keys and values)
-def invert_dict(d):
-    pass
-
-# Q120: Count frequency of list elements using dict
-def frequency_dict(lst):
-    pass
-
-# Q121: Check if two dictionaries are equal
-def dicts_equal(d1, d2):
-    pass
-
-# Q122: Get all keys with specific value
-def keys_with_value(d, value):
-    pass
-
-# Q123: Remove keys with None values
-def remove_none_values(d):
-    pass
-
-# Q124: Sort dictionary by keys
-def sort_by_keys(d):
-    pass
-
-# Q125: Sort dictionary by values
-def sort_by_values(d):
-    pass
-
-# Q126: Deep merge nested dictionaries
-def deep_merge(d1, d2):
-    pass
-
-# Q127: Flatten nested dictionary
-def flatten_dict(d, parent_key='', sep='.'):
-    # Input: {'a': {'b': 1}} → {'a.b': 1}
-    pass
-
-# Q128: Unflatten dictionary
-def unflatten_dict(d, sep='.'):
-    # Input: {'a.b': 1} → {'a': {'b': 1}}
-    pass
-
-# Q129: Find difference between dictionaries
-def dict_difference(d1, d2):
-    pass
-
-# Q130: Group list of dicts by key
-def group_by_key(lst, key):
-    # Input: [{'name':'a', 'age':20}, {'name':'b', 'age':20}], 'age'
-    # Output: {20: [{'name':'a', 'age':20}, {'name':'b', 'age':20}]}
-    pass
-
-# Q131: Filter dictionary by condition
-def filter_dict(d, condition):
-    pass
-
-# Q132: Map function over dictionary values
-def map_dict_values(d, func):
-    pass
-
-# Q133: Create dictionary from two lists
-def zip_to_dict(keys, values):
-    pass
-
-# Q134: Find all paths to leaf values
-def dict_paths(d, path=[]):
-    # Return all paths like ['a', 'b', 'c'] for nested dict
-    pass
-
-# Q135: Access nested dictionary safely
-def safe_get(d, keys, default=None):
-    # Input: {'a': {'b': 1}}, ['a', 'b'] → 1
-    pass
-
-# Q136: Implement LRU Cache using dictionary
-class LRUCache:
-    def __init__(self, capacity):
-        pass
-    
-    def get(self, key):
-        pass
-    
-    def put(self, key, value):
-        pass
-
-# Q137: Find longest sequence in dictionary chain
-def longest_chain(words):
-    # Each word can add one letter to previous
-    pass
-
-# Q138: Create a defaultdict-like class
-class DefaultDict:
-    def __init__(self, default_factory):
-        pass
-
-# Q139: Implement trie using nested dicts
-class Trie:
-    def __init__(self):
-        pass
-    
-    def insert(self, word):
-        pass
-    
-    def search(self, word):
-        pass
-
-# Q140: Dictionary-based state machine
-class StateMachine:
-    def __init__(self, transitions):
-        # transitions = {'state1': {'event1': 'state2'}}
-        pass
-
-
-8. Set Operations:
-
-# Q141: Find unique elements in list using set
-def unique_elements(lst):
-    pass
-
-# Q142: Check if two lists have common elements
-def has_common(lst1, lst2):
-    pass
-
-# Q143: Find symmetric difference
-def symmetric_diff(set1, set2):
-    pass
-
-# Q144: Check if set is subset
-def is_subset(set1, set2):
-    pass
-
-# Q145: Check if set is superset
-def is_superset(set1, set2):
-    pass
-
-# Q146: Find elements in first list but not in second
-def list_difference(lst1, lst2):
-    pass
-
-# Q147: Find elements common to all lists
-def common_to_all(*lists):
-    pass
-
-# Q148: Remove duplicates from list of lists
-def unique_sublists(lst):
-    # Input: [[1,2], [1,2], [3,4]] → [[1,2], [3,4]]
-    pass
-
-# Q149: Find all unique pairs
-def unique_pairs(lst):
-    pass
-
-# Q150: Check if lists have exactly same elements
-def same_elements(lst1, lst2):
-    pass
-
-# Q151: Find missing and extra elements
-def compare_lists(lst1, lst2):
-    # Return (missing from lst1, extra in lst1)
-    pass
-
-# Q152: Power set (all subsets)
-def power_set(s):
-    pass
-
-# Q153: Check if sets are disjoint
-def are_disjoint(set1, set2):
-    pass
-
-# Q154: Find longest consecutive sequence using set
-def longest_sequence(lst):
-    pass
-
-# Q155: Group anagrams using set
-def group_anagrams(words):
-    pass
-
-9. Type Conversion:
-
-# Q156: Convert string to list of characters
-def string_to_chars(s):
-    pass
-
-# Q157: Convert list of characters to string
-def chars_to_string(chars):
-    pass
-
-# Q158: Convert list to tuple and vice versa
-def list_tuple_convert(obj):
-    pass
-
-# Q159: Convert string of numbers to list of integers
-def string_to_int_list(s):
-    # Input: "1 2 3 4 5" → [1, 2, 3, 4, 5]
-    pass
-
-# Q160: Convert list of integers to string
-def int_list_to_string(lst):
-    # Input: [1, 2, 3] → "1 2 3"
-    pass
-
-# Q161: Convert nested structure types
-def convert_structure(obj, from_type, to_type):
-    # Convert all lists to tuples in nested structure
-    pass
-
-# Q162: Safe type conversion with default
-def safe_convert(value, target_type, default=None):
-    pass
-
-# Q163: Convert dictionary to list of tuples
-def dict_to_tuples(d):
-    pass
-
-# Q164: Convert string representation to actual type
-def eval_type(s):
-    # Input: "[1, 2, 3]" → [1, 2, 3]
-    # Input: "{'a': 1}" → {'a': 1}
-    pass
-
-# Q165: Convert matrix (2D list) to dictionary
-def matrix_to_dict(matrix):
-    # Input: [[1,2], [3,4]] → {(0,0):1, (0,1):2, (1,0):3, (1,1):4}
-    pass
-
-# Q166: Convert number to list of digits
-def num_to_digits(n):
-    pass
-
-# Q167: Convert list of digits to number
-def digits_to_num(digits):
-    pass
-
-# Q168: Convert bytes to string and vice versa
-def bytes_string_convert(obj):
-    pass
-
-# Q169: Convert between different number bases
-def convert_base(num, from_base, to_base):
-    pass
-
-# Q170: Convert Roman numeral to integer
-def roman_to_int(s):
-    pass
-
-10. Type Checking:
-
-# Q176: Create type validator decorator
-def validate_types(*types):
-    def decorator(func):
-        pass
-    return decorator
-
-# Q177: Check nested types
-def check_nested_type(obj, type_structure):
-    # Input: [1, 2, 3], list[int] → True
-    pass
-
-# Q178: Get all types in a collection
-def get_all_types(collection):
-    pass
-
-# Q179: Type-safe getter
-def typed_get(d, key, expected_type, default=None):
-    pass
-
-# Q180: Check if object matches type hint
-def matches_type_hint(obj, hint):
-    # Support List[int], Dict[str, int], etc.
-    pass
-
-11. Mixed Data Type Problems :
-
-# Q181: Parse CSV string to list of dictionaries
-def parse_csv(csv_string):
-    # Input: "name,age\nJohn,30\nJane,25"
-    # Output: [{'name':'John', 'age':'30'}, ...]
-    pass
-
-# Q182: Convert data types in nested structure
-def convert_nested(obj, type_map):
-    # Convert all strings that look like numbers to int/float
-    pass
-
-# Q183: Deep equality check for any type
-def deep_equal(obj1, obj2):
-    pass
-
-# Q184: Create object from dictionary
-def dict_to_object(d):
-    pass
-
-# Q185: Serialize any object to string
-def serialize(obj):
-    pass
-
-# Q186: Deserialize string to object
-def deserialize(s):
-    pass
-
-# Q187: Find most common type in collection
-def most_common_type(collection):
-    pass
-
-# Q188: Convert JSON-like string to Python objects
-def parse_json(s):
-    # Without using json module
-    pass
-
-# Q189: Pretty print any data structure
-def pretty_print(obj, indent=0):
-    pass
-
-# Q190: Compare two data structures structurally
-def same_structure(obj1, obj2):
-    # Check if they have same structure (ignore values)
-    pass
-
-12. Advanced Challenges:
-# Q191: Implement custom string class
-class MyString:
-    def __init__(self, value):
-        pass
-    
-    def __add__(self, other):
-        pass
-    
-    def __mul__(self, n):
-        pass
-    
-    def __getitem__(self, index):
-        pass
-    
-    def __len__(self):
-        pass
-
-# Q192: Implement custom list class
-class MyList:
-    def __init__(self):
-        pass
-    
-    def append(self, item):
-        pass
-    
-    def pop(self):
-        pass
-    
-    def __iter__(self):
-        pass
-
-# Q193: Implement custom dictionary class
-class MyDict:
-    def __init__(self):
-        pass
-    
-    def __setitem__(self, key, value):
-        pass
-    
-    def __getitem__(self, key):
-        pass
-
-# Q194: Create immutable list class
-class ImmutableList:
-    pass
-
-# Q195: Create a class that auto-converts types
-class AutoType:
-    def __init__(self, value):
-        # Automatically detect and convert type
-        pass
-
-# Q196: Implement memory-efficient range-like class
-class MyRange:
-    def __init__(self, start, stop=None, step=1):
-        pass
-    
-    def __iter__(self):
-        pass
-    
-    def __len__(self):
-        pass
-
-# Q197: Create ordered set
-class OrderedSet:
-    def __init__(self):
-        pass
-    
-    def add(self, item):
-        pass
-    
-    def remove(self, item):
-        pass
-
-# Q198: Implement bidirectional dictionary
-class BiDict:
-    def __init__(self):
-        pass
-    
-    def __setitem__(self, key, value):
-        # Both key→value and value→key
-        pass
-
-# Q199: Create a multi-type container
-class MultiTypeContainer:
-    def __init__(self):
-        pass
-    
-    def add(self, item):
-        # Store items grouped by type
-        pass
-    
-    def get_by_type(self, type_class):
-        pass
-
-# Q200: Implement expression evaluator
-def evaluate(expression):
-    # Input: "3 + 4 * 2" → 11
-    # Support: +, -, *, /, parentheses
-    pass
-
-
-📋 Quick Practice Checklist
-Beginner (Q1-Q50)
- Variable swapping (5 questions)
- Integer basics (15 questions)
- Float basics (5 questions)
- String basics (15 questions)
- List basics (10 questions)
-
-Intermediate (Q51-Q120)
- String manipulation (15 questions)
- List operations (25 questions)
- Tuple operations (15 questions)
- Dictionary operations (15 questions)
-
-Advanced (Q121-Q200)
- Set operations (15 questions)
- Type conversion (15 questions)
- Type checking (10 questions)
- Mixed problems (10 questions)
- Custom implementations (10 questions)
-
- 
+PYTHON CODING QUESTION BANK 
+===========================================================
+
+NOTE:
+- These are coding exercises (write code/functions), not theory questions.
+- You can solve each by writing a function + a few test cases.
+- Numbering is continuous so you can track progress.
+
+-----------------------------------------------------------
+SECTION 1: INPUT/OUTPUT + BASIC SYNTAX
+-----------------------------------------------------------
+1) Read a name and print: "Hello, <name>"
+2) Read two integers and print their sum
+3) Read two integers and print: sum, difference, product, quotient
+4) Read an integer n and print n*n
+5) Read radius and print area of circle (pi=3.14159)
+6) Read 3 integers and print the maximum
+7) Read a string and print its length (without len())
+8) Read a string and print it in uppercase (without upper())
+9) Read a string and print it reversed
+10) Read an integer and print "Positive/Negative/Zero"
+
+-----------------------------------------------------------
+SECTION 2: VARIABLES + DATA TYPES (core)
+-----------------------------------------------------------
+11) Swap two variables without using a temp variable
+12) Swap three variables in circular rotation (a->b, b->c, c->a)
+13) Assign the same value to x, y, z in one line
+14) Unpack a list [1,2,3,4,5] into first, second, rest
+15) Unpack a tuple into a,b,c and re-pack it reversed
+16) Write type_name(x) that returns type as string (e.g., "int")
+17) Write is_int_not_bool(x) (True for int, False for bool)
+18) Write is_numeric(x) (int/float/complex but not bool)
+19) Write classify_type(x) -> "none/bool/number/string/list/tuple/set/dict/other"
+20) Write truthy_count(items) count truthy values
+21) Return list of falsy values from items
+22) Convert a string "123" to int without using int()
+23) Convert string "3.14" to float without using float()
+24) Convert an int to string without using str()
+25) Convert a list of chars to string without using ''.join()
+26) Convert string to list of words without using split()
+27) Convert list of words to one string without using join()
+28) Write safe_convert(value, target_type, default) with try/except
+29) Write to_bool_custom(x): accept "true/false/1/0/yes/no"
+30) Show aliasing: b=a on list, modify b, observe a changed (print)
+
+-----------------------------------------------------------
+SECTION 3: OPERATORS + EXPRESSIONS
+-----------------------------------------------------------
+31) Given a,b compute a//b and a%b without using // or %
+32) Implement power(a,b) without using **
+33) Evaluate an expression string like "3+5*2" (no eval)
+34) Implement bitwise AND, OR, XOR using only arithmetic (challenge)
+35) Check if a number is even using bitwise operator
+36) Toggle a boolean without using not
+37) Implement absolute value without abs()
+38) Clamp a number between lo and hi
+39) Implement min(a,b) without min()
+40) Implement max(a,b) without max()
+
+-----------------------------------------------------------
+SECTION 4: IF/ELIF/ELSE PRACTICE
+-----------------------------------------------------------
+41) Grade system: input marks and print grade A/B/C/D/F
+42) Check leap year
+43) Triangle validity check (3 sides)
+44) Triangle type: equilateral/isosceles/scalene
+45) Compare 3 numbers and print sorted order
+46) Check if character is vowel or consonant
+47) Check if character is digit/alpha/special (no isdigit/isalpha)
+48) Ticket price based on age brackets
+49) Electricity bill calculation by slabs
+50) Simple calculator with menu (+,-,*,/)
+
+-----------------------------------------------------------
+SECTION 5: LOOPS (for/while)
+-----------------------------------------------------------
+51) Print numbers 1..n
+52) Print even numbers up to n
+53) Sum 1..n
+54) Sum of squares 1..n
+55) Compute factorial(n)
+56) Count digits of an integer
+57) Sum of digits
+58) Product of digits
+59) Reverse an integer (handle negative)
+60) Check palindrome number
+61) Fibonacci first n terms
+62) nth Fibonacci number (efficient)
+63) Print multiplication table of n
+64) Count vowels in a string
+65) Count words in a sentence (no split)
+66) Find first occurrence of char in string (no find)
+67) Find all occurrences of substring (allow overlaps)
+68) Compute gcd(a,b) using Euclid loop
+69) Compute lcm(a,b)
+70) Check if a number is prime
+71) Print primes up to n (simple)
+72) Print primes up to n (sieve)
+73) Armstrong number check
+74) Perfect number check
+75) Strong number check
+76) Sum of divisors
+77) Count divisors
+78) Convert decimal to binary (no bin)
+79) Convert binary string to decimal (no int(x,2))
+80) Convert decimal to base 2..36
+
+-----------------------------------------------------------
+SECTION 6: FUNCTIONS (basics)
+-----------------------------------------------------------
+81) Write add(a,b) and test it
+82) Write average(list) without sum()/len()
+83) Write count_occurrences(s, ch)
+84) Write reverse_string(s) without slicing
+85) Write is_palindrome_string(s) ignoring case and spaces
+86) Write remove_spaces(s)
+87) Write replace_char(s, old, new) without replace()
+88) Write substring(s, start, end) without slicing (use loop)
+89) Write join_with_delim(items, delim) without join()
+90) Write split_by_delim(s, delim) without split()
+
+-----------------------------------------------------------
+SECTION 7: RECURSION
+-----------------------------------------------------------
+91) factorial recursion
+92) fibonacci recursion (then optimize with memo)
+93) sum of digits recursion
+94) reverse string recursion
+95) power(a,b) recursion
+96) gcd recursion
+97) flatten nested list recursion
+98) count items in nested list recursion
+99) generate all subsets of a list
+100) generate permutations of a string
+
+-----------------------------------------------------------
+SECTION 8: STRINGS (more practice)
+-----------------------------------------------------------
+101) char_frequency(s) -> dict
+102) first_unique_char(s)
+103) remove_duplicate_chars_keep_order(s)
+104) check anagram(s1,s2) ignoring spaces/case
+105) longest_word(sentence)
+106) title_case_manual(sentence) (capitalize each word)
+107) rle_compress("aaabb") -> "a3b2"
+108) rle_decompress("a3b2") -> "aaabb"
+109) check rotation(s1,s2)
+110) longest_common_prefix(list_of_strings)
+111) validate email (basic rules)
+112) validate password (min length, digit, upper, lower, special)
+113) count substring occurrences
+114) remove punctuation from string
+115) extract integers from "a12b3" -> [12,3]
+
+-----------------------------------------------------------
+SECTION 9: LISTS
+-----------------------------------------------------------
+116) list_sum without sum()
+117) list_max without max()
+118) list_min without min()
+119) second_largest
+120) is_sorted
+121) remove all occurrences of value
+122) dedupe_keep_order
+123) rotate list by k
+124) merge two sorted lists
+125) intersection of two lists (with duplicates handled)
+126) union of two lists
+127) difference of two lists
+128) chunk list into size k
+129) flatten one level [[1,2],[3]] -> [1,2,3]
+130) flatten deep [1,[2,[3]]] -> [1,2,3]
+131) pairs_with_sum(list,target)
+132) three_sum_zero(list)
+133) max_subarray_sum (Kadane)
+134) product_except_self (no division)
+135) find_missing_number in 1..n
+136) find_duplicates
+137) binary_search in sorted list
+138) quicksort implementation
+139) mergesort implementation
+140) kth_largest element
+
+-----------------------------------------------------------
+SECTION 10: TUPLES
+-----------------------------------------------------------
+141) convert list to tuple and tuple to list
+142) tuple_count_manual (no count)
+143) tuple_index_manual (no index)
+144) unzip list of pairs [(1,'a'),(2,'b')] -> ([1,2],['a','b'])
+145) merge two tuples element-wise (1,2)+(3,4)->(4,6)
+146) remove value from tuple -> new tuple
+147) sort list of tuples by second element
+148) find tuple with max sum from list of tuples
+149) group tuples by first element -> dict
+150) convert list of tuples to dict (last wins)
+
+-----------------------------------------------------------
+SECTION 11: DICTIONARIES
+-----------------------------------------------------------
+151) frequency_dict(items)
+152) invert_dict (if duplicate values, store list of keys)
+153) merge dictionaries without using ** or |
+154) sort dict by keys (return list of pairs)
+155) sort dict by values (return list of pairs)
+156) remove keys with None values
+157) safe_get nested dict using list of keys
+158) flatten nested dict with dot keys: {"a":{"b":1}} -> {"a.b":1}
+159) unflatten dot dict: {"a.b":1} -> {"a":{"b":1}}
+160) dict_diff(d1,d2): added/removed/changed keys
+161) group_by(items, key_func) -> dict
+162) count_words_in_text using dict
+163) top_k_frequent_words(text,k)
+164) build index: word -> list of positions
+165) implement simple phonebook CRUD
+
+-----------------------------------------------------------
+SECTION 12: SETS
+-----------------------------------------------------------
+166) unique elements from list
+167) check duplicates in list using set
+168) intersection of multiple sets (no set.intersection(*...))
+169) union of multiple sets (no set.union(*...))
+170) symmetric difference without using ^
+171) check subset without using <=
+172) check disjoint sets without using isdisjoint()
+173) remove duplicates preserve order (use set + list)
+174) longest_consecutive_sequence (classic set trick)
+175) powerset (return list of subsets)
+
+-----------------------------------------------------------
+SECTION 13: NONE + MISSING VALUES
+-----------------------------------------------------------
+176) coalesce(*values): first non-None
+177) drop_none(list)
+178) replace_none(list, replacement)
+179) safe_add(a,b) treating None as 0
+180) count_none in nested structure (list/dict)
+181) validate_required_fields(dict, required_keys) -> missing list
+182) safe_divide(a,b, default=None) (handle None and ZeroDivision)
+183) safe_parse_int(s, default=None)
+
+-----------------------------------------------------------
+SECTION 14: EXCEPTIONS
+-----------------------------------------------------------
+184) write parse_int(s): raise ValueError on invalid
+185) write divide(a,b): raise custom error on b==0
+186) handle IndexError when accessing list
+187) handle KeyError with dict.get fallback
+188) create custom exception class InvalidAgeError
+189) validate_age(age) raising InvalidAgeError
+190) implement retry(func, times) catching exceptions
+
+-----------------------------------------------------------
+SECTION 15: FILE HANDLING
+-----------------------------------------------------------
+191) write text to file
+192) read file and count lines
+193) read file and count words
+194) copy file contents to another file
+195) find longest line in a file
+196) remove blank lines and write cleaned file
+197) read CSV (no csv module) into list of dicts
+198) write list of dicts to CSV (no csv module)
+199) count character frequency from file
+200) search for a word in file and return line numbers
+
+-----------------------------------------------------------
+SECTION 16: OOP (CLASSES) – DATA TYPES STYLE PRACTICE
+-----------------------------------------------------------
+201) class Point(x,y) with distance_to(other)
+202) class BankAccount with deposit/withdraw/balance
+203) class Rectangle with area/perimeter
+204) class Counter with increment/decrement/reset
+205) class Student with average marks
+206) implement __str__ and __repr__
+207) demonstrate class vs instance variables
+208) class Stack using list
+209) class Queue using collections.deque (or list challenge)
+210) class LRUCache (dict + order tracking)
+
+-----------------------------------------------------------
+SECTION 17: ITERATORS, GENERATORS, COMPREHENSIONS
+-----------------------------------------------------------
+211) generator that yields Fibonacci numbers
+212) generator that yields primes up to n
+213) implement custom range class (iterator)
+214) list comprehension: squares of evens
+215) dict comprehension: char frequencies
+216) set comprehension: unique word lengths
+217) generator expression: sum of squares
+218) implement enumerate manually
+219) implement zip manually
+220) flatten list using comprehension (one level)
+
+-----------------------------------------------------------
+SECTION 18: MODULES + STANDARD LIB (GOOD PRACTICE TASKS)
+-----------------------------------------------------------
+221) using datetime: calculate age from birthdate
+222) using math: compute quadratic roots
+223) using random: simulate dice rolls and frequency
+224) using re: validate phone number
+225) using json: read/write JSON file
+226) using collections.Counter: top-k frequent elements
+227) using pathlib: list all .txt files in a folder
+228) using statistics: compare mean/median on same data
+229) using decimal: show precise 0.1+0.2
+230) using itertools: combinations of a list
+
+-----------------------------------------------------------
+SECTION 19: ALGORITHMS (GOOD FOR PRACTICE)
+-----------------------------------------------------------
+231) linear search
+232) binary search recursive
+233) bubble sort
+234) selection sort
+235) insertion sort
+236) merge sort
+237) quick sort
+238) check balanced parentheses
+239) evaluate postfix expression
+240) two-sum
+241) longest substring without repeating characters
+242) longest palindromic substring
+243) minimum window substring (advanced)
+244) matrix transpose
+245) rotate matrix 90 degrees
+246) flood fill (grid)
+247) BFS on graph represented by dict
+248) DFS on graph represented by dict
+249) detect cycle in directed graph (advanced)
+250) shortest path (BFS for unweighted)
+
+-----------------------------------------------------------
+SECTION 20: MINI PROJECTS (PUT TYPES TOGETHER)
+-----------------------------------------------------------
+251) CLI contact book (dict + file save/load)
+252) simple expense tracker (list of dicts)
+253) quiz app (questions stored in list/dict)
+254) text analyzer (freq, top words, sentence count)
+255) password manager (basic; encrypt optional)
+256) to-do list with persistence to file
+257) mini library system (books/users, borrow/return)
+258) simple inventory system (CRUD + search + sort)
+259) log parser: read file -> stats dict
+260) CSV report generator from raw data
+
+-----------------------------------------------------------
